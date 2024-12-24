@@ -1,0 +1,52 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.App.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+.back-to-top {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.back-to-top.light {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-to-top.dark {
+  background-color: #444;
+  color: white;
+}
+
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+.back-to-top.dark:hover {
+  background-color: #333;
+}

@@ -1,0 +1,197 @@
+App.css
+
+.home-content{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+ 
+}
+.home-content.light {
+  background-color: #f0f0f0;
+ 
+}
+
+.home-content.dark {
+  background-color: #000000;
+}
+
+.p.light {
+  color: red;
+}
+
+
+/* Base styles for the list */
+
+
+
+
+/* Image styles */
+
+
+img:hover {
+  transform: scale(1.1);     /* Zoom in on hover */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+.btn.light {
+  background-color: #222;
+  color: white;
+}
+
+
+/* Media Queries */
+@media (min-width: 1440px) {
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 5ch; /* 5 characters (adjust this as needed) */
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Typing effect for the span */
+  .greet span {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 4s steps(5, end) infinite, blink 0.7s step-end infinite;
+  }
+  
+  /* Style for the entire h1 */
+  .greet {
+    font-size: 2rem;
+    font-size: 50px;
+  }
+  
+  
+  
+  
+  .img{
+    border-right: 10px solid rgb(0, 255, 179);
+    border-bottom: 2px solid rgb(0, 255, 179);
+    margin: 50px;
+    padding: 50px;
+  }
+  .me {
+    border-radius: 20px;
+   
+    background-color: rgba(0, 255, 179, 0.897);
+    ;
+                 /* Default size */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition */
+   
+  }
+  .home-content {
+    
+    height: 100vh;
+   
+    gap: 100px;
+      display: flex;
+      justify-content: center;
+                  /* Space between elements */
+  }
+  .greet-container{
+    margin-top: 200px;
+  }
+  .ul {
+      flex-direction: column;    /* Arrange items in a row for larger screens */
+      margin-left: 100px;     /* Margin for left alignment */
+  }
+
+  .ul li {
+      font-size: 50px;        /* Increase size for larger screens */
+      margin-bottom: 0;       /* No bottom margin in row layout */
+  }
+}
+
+@media (max-width: 768px) {
+  .greet-container{
+    
+    padding: 50px;
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 5ch; /* 5 characters (adjust this as needed) */
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .greet span {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 4s steps(5, end) infinite, blink 0.7s step-end infinite;
+  }
+  
+  /* Style for the entire h1 */
+  .greet {
+    font-size: 2rem;
+    font-size: 50px;
+  }
+ 
+  .img{
+    border-right: 10px solid rgb(0, 255, 179);
+    border-bottom: 2px solid rgb(0, 255, 179);
+    
+    padding: 50px;
+  }
+  .me {
+    border-radius: 20px;
+   
+    background-color: rgba(0, 255, 179, 0.897);
+    ;
+    width: 400px;              /* Default size */
+    height: 400px;             /* Default size */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition */
+   
+  }
+  .home-content {
+    
+      justify-content: center;
+                 /* Space between elements */
+  }
+
+  .ul {
+      flex-direction: column;    /* Arrange items in a row for larger screens */
+      margin-left: 100px;     /* Margin for left alignment */
+  }
+
+  .ul li {
+      font-size: 50px;        /* Increase size for larger screens */
+      margin-bottom: 0;       /* No bottom margin in row layout */
+  }
+}

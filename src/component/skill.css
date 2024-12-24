@@ -1,0 +1,123 @@
+/* Light and Dark Theme Variables */
+:root {
+  --text-color: #000000;
+  --bar-background-color: #e0e0e0;
+  --bar-fill-color: linear-gradient(90deg, #007acc, #00c6ff);
+  --circle-background-color: #f0f0f0;
+  --circle-fill-color: #00c6ff;
+}
+.skills-container.light{
+background-color:wheat;}
+.skills-container.dark{
+  background-color: #000000;
+}
+.dark {
+  --text-color: #f5f5f5;
+  --bar-background-color: #3a3a3a;
+  --bar-fill-color: linear-gradient(90deg, #ff8c00, #ff4500);
+  --circle-background-color: #3a3a3a;
+  --circle-fill-color: #ff4500;
+}
+@media (max-width: 768px) {
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+    
+  }
+  .icon{
+    background-color: #ff4400a4;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .skills-container{
+    display: grid;
+    
+    padding: 100px;
+  }
+  .icon{
+    background-color: #ff4400a4;
+    font-size: 50px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+}
+
+.additional-skills {
+   
+  text-align: center; 
+}
+.additional-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skills Container */
+.skills-container {
+  
+  margin: 0 auto;
+  
+  
+  
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between the columns */
+}
+
+/* Skill Item */
+.skill-name {
+  font-size: 1.2rem;
+  font-weight: bold; /* Make the skill names bold */
+  margin-bottom: 10px; /* Add spacing after the skill name */
+  
+  text-align: left; /* Align skill name to the left */
+}
+
+/* Horizontal Skill Bar Container */
+.skill-bar {
+  background-color: var(--bar-background-color);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  position: relative;
+  margin-bottom: 20px; /* Add spacing between bars */
+}
+
+/* Animated Skill Progress Bar */
+.skill-progress {
+  height: 100%;
+  background: var(--bar-fill-color);
+  width: 0%; /* Start at 0% for animation */
+  transition: width 1.5s ease-in-out; /* Smooth width animation */
+}
+
+/* Skill Level Text */
+.skill-level {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: right;
+}
+
+/* Circle Progress Bar Container */
+
+h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
+

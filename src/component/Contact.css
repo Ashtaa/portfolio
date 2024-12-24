@@ -1,0 +1,58 @@
+/* Ensure the body and HTML take full height */
+
+.form-container.light{
+
+  background-color: #4e647a;
+}
+.form-container.dark{
+  background-color: black;
+}
+/* Form container styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  /* Light background */
+  
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.form2{
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+/* Form element styles */
+.Form {
+  
+  width: 100%;
+  margin-bottom: 15px; /* Add spacing between form fields */
+  display: flex;
+  flex-direction: column;
+  
+    margin-right: 100px;/* Vertically center */
+ 
+}
+
+.input, .message, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}

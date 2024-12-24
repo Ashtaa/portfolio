@@ -1,0 +1,112 @@
+.header {
+  padding: 1rem;
+  background-color: #f8f9fa; /* Light theme */
+  text-align: center;
+  position: relative;
+}
+.tggle-theme{
+  background-color: red;
+}
+.header.dark {
+  background-color: #0c0c0c; /* Dark theme */
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center items */
+  gap: 1rem;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a,
+nav ul li .toggle-button {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+  margin: 5px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menu active state */
+.hamburger-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: inherit;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* Active navigation menu */
+nav ul.active {
+  display: flex; /* Show menu when active */
+  height: 50vh;
+  align-items: center;
+  margin: 20px;
+  padding: 1rem;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme menu background */
+.header.light nav ul.active {
+  background-color: white;
+  color: black;
+}
+
+/* Dark theme menu background */
+.header.dark nav ul.active {
+  background-color: #343a40;
+  color: white;
+}
+
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on small screens */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
