@@ -55,9 +55,7 @@ td {
   .about-content{
     padding: 50px;
   }
-  .tab{
-    padding-left: 50px;
-  }
+ 
 }
 @media (min-width: 768px) {
   

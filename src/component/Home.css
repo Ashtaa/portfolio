@@ -173,14 +173,15 @@ img:hover {
    
     background-color: rgba(0, 255, 179, 0.897);
     ;
-    width: 400px;              /* Default size */
+                /* Default size */
     height: 400px;             /* Default size */
     object-fit: cover;
     transition: transform 0.3s ease; /* Smooth transition */
    
   }
   .home-content {
-    
+    margin: 0;
+  padding: 0;
       justify-content: center;
                  /* Space between elements */
   }
